@@ -1,9 +1,8 @@
-import BarChart from '@/components/BarChart'
-import Header from '@/components/Header'
-import RecentOrders from '@/components/RecentOrders'
-import TopCards from '@/components/TopCards'
+import BarChart from '../../components/BarChart'
+import Header from '../../components/Header'
+import RecentOrders from '../../components/RecentOrders'
+import TopCards from '../../components/TopCards'
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (

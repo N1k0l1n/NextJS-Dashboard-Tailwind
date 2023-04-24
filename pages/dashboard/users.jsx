@@ -1,6 +1,6 @@
 import React from 'react'
 import {BsPersonFill, BsThreeDotsVertical} from "react-icons/bs";
-import {data} from "../data/data"
+import {data} from "../../data/data"
 
 const users = () => {
   return (
