@@ -1,5 +1,6 @@
 import React from "react";
 import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
+import {FaRocketchat} from "react-icons/fa";
 import { FiSettings, FiPower } from "react-icons/fi";
 import { useRouter } from "next/router";
 import { deleteCookie } from "cookies-next";
@@ -36,6 +37,11 @@ const Sidebar = ({ children }) => {
           <Link href="/dashboard/users">
             <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
               <RxPerson size={20} />
+            </div>
+          </Link>
+          <Link href="/dashboard/chats">
+            <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
+              <FaRocketchat size={20} />
             </div>
           </Link>
           <Link href="/dashboard/settings">
