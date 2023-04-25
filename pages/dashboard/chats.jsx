@@ -27,7 +27,7 @@ const chats = () => {
   
 
   return (
-    <div className="shadow">
+    <div className="bg-gray-50">
     <ChatEngine
       height="calc(125vh - 212px)"
       projectID="70adff44-08c1-4276-9d92-925e0f37acbd"

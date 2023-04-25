@@ -2,7 +2,7 @@ import React from 'react'
 
 const settings = () => {
   return (
-    <div className="bg-gray-200 min-h-screen pt-2 font-mono">
+    <div className="bg-gray-50 min-h-screen pt-2 font-mono">
         <div className="container mx-auto">
             <div className="inputs w-full max-w-2xl p-6 mx-auto">
                 <h2 className="text-2xl text-gray-900">Account Setting</h2>
