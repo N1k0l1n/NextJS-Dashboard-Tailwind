@@ -11,7 +11,7 @@ const login = () => {
     loading: false,
     user: {
       email: "",
-      password: ""
+      password: "",
     },
     errorMessage: "",
   });
@@ -33,15 +33,13 @@ const login = () => {
     try {
       let response = await UserService.login(state.user);
       if (response) {
-          setCookie('logged', 'true')
-          localStorage.setItem('user','test');
-          localStorage.setItem('token', response.data.token);
-          navigate.push("/dashboard", { replace: true });
+        setCookie("token", response.data.token);
+        navigate.push("/dashboard");
       }
     } catch (error) {
       Swal.fire("Error");
       setState({ ...state, errorMessage: error.message });
-      navigate.push("/register", { replace: false });
+      navigate.push("/register");
     }
   };
 
@@ -86,7 +84,7 @@ const login = () => {
                   id="password"
                   placeholder="••••••••"
                   value={user.password}
-                  onChange={updateInput} 
+                  onChange={updateInput}
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   required=""
                 />
