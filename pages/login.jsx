@@ -36,11 +36,9 @@ const login = () => {
         setCookie("token", response.data.token);
         const currentUser = await UserService.getCurrentUser(state.user.email);
         setCookie("user", JSON.stringify(state.user));
-        // console.log(state.user.email)
         navigate.push("/dashboard");
       }
     } catch (error) {
-      console.log(error);
       Swal.fire("Error");
       setState({ ...state, errorMessage: error.message });
       navigate.push("/login");
