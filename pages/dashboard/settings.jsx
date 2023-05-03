@@ -2,10 +2,10 @@ import React from 'react'
 
 const settings = () => {
   return (
-    <div className="bg-gray-50 min-h-screen pt-2 font-mono">
+    <div className="bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto">
             <div className="inputs w-full max-w-2xl p-6 mx-auto">
-                <h2 className="text-2xl text-gray-900">Account Setting</h2>
+                <h2 className="text-2xl text-white-900">Account Setting</h2>
                 <form className="mt-6 border-t border-gray-400 pt-4">
                     <div className='flex flex-wrap -mx-3 mb-6'>
                         <div className='w-full md:w-full px-3 mb-6'>
@@ -46,7 +46,7 @@ const settings = () => {
                             </div>
                         </div>
                         <div className="personal w-full border-t border-gray-400 pt-4">
-                            <h2 className="text-2xl text-gray-900">Personal info:</h2>
+                            <h2 className="text-2xl text-white-900">Personal info:</h2>
                             <div className="flex items-center justify-between mt-4">
                                 <div className='w-full md:w-1/2 px-3 mb-6'>
                                     <label className='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2' >first name</label>
@@ -63,7 +63,7 @@ const settings = () => {
                             </div>
                             <div className='w-full md:w-full px-3 mb-6'>
                                 <label className='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2' >Bio</label>
-                                <textarea className='bg-gray-100 rounded-md border leading-normal resize-none w-full h-20 py-2 px-3 shadow-inner border border-gray-400 font-medium placeholder-gray-700 focus:outline-none focus:bg-white'  required></textarea>
+                                <textarea className='bg-gray-100 rounded-md  leading-normal resize-none w-full h-20 py-2 px-3 shadow-inner border border-gray-400 font-medium placeholder-gray-700 focus:outline-none focus:bg-white'  required></textarea>
                             </div>
                             <div className="flex justify-end">
                                 <button className="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3" type="submit">save changes</button>

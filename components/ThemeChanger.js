@@ -10,7 +10,7 @@ const ThemeChanger = () => {
 
     if(currentTheme === 'light'){
        return(
-        <button className='bg-gray-200 dark:bg-gray-600'
+        <button className='bg-gray-100 dark:bg-gray-600'
         onClick={() => setTheme('dark')}
         >
         <FaSun/>

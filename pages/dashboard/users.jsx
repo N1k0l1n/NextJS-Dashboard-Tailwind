@@ -4,14 +4,14 @@ import {data} from "../../data/data"
 
 const users = () => {
   return (
-    <div className='bg-gray-100 min-h-screen'>
+    <div className='bg-gray-50 dark:bg-gray-900 min-h-screen'>
       <div className='flex justify-between p-4'>
         <h2>Users</h2>
         <h2>Welcome Back, User</h2>
       </div>
       <div className='p-4'>
-            <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
-                <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
+            <div className='w-full m-auto p-4 border rounded-lg bg-gray-50 dark:bg-gray-900 overflow-y-auto'>
+                <div className='my-3 p-2 bg-gray-50 dark:bg-gray-900 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
                     <span>Name</span>
                     <span className='sm:text-left text-right'>Email</span>
                     <span className='hidden md:grid'>Last Order</span>
@@ -20,7 +20,7 @@ const users = () => {
                 <ul>
                     {data.map((order, id) =>(
                         <li key={id} className='bg-gray-50
-                         hover:bg-gray-100 
+                         hover:bg-gray-100  dark:bg-gray-900
                          rounded-lg my-3 p-2 
                          grid md:grid-cols-4 
                          sm:grid-cols grid-cols-2
